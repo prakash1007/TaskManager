@@ -34,7 +34,7 @@ public class LoggingAspect {
 	
 	@AfterReturning("execution(* com.example.taskmanager.service.TaskService.*(. .))")
 	public void logMethodSucceed(JoinPoint jp) {
-		LOGGER.info("Method has called successfully"+ jp.getSignature().getName());
+		LOGGER.info("Method has called successfully "+ jp.getSignature().getName());
 	}
 
 }
