@@ -18,7 +18,7 @@ public class PerformanceMonitorAspect {
 		long start = System.currentTimeMillis();
 		Object ob = jp.proceed();
 		long end = System.currentTimeMillis();
-		LOGGER.info("Time Taken by " + jp.getSignature().getName() + " : " + (end - start) + "ms");
+		LOGGER.info("Time Taken by " + jp.getSignature().getName() + " : " + (end - start) + " ms");
 		return ob;
 	}
 }
